@@ -94,4 +94,6 @@ app.get("*",(req,res)=>{
     res.render("errorpag")
 })
 g(publicdir)
-app.listen(3000, ()=>{g("server is up on port 3000")})
+
+const port = process.env.PORT || 3000
+app.listen(port, ()=>{g(`server is up on port ${port}`)})

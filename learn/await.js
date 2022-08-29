@@ -30,6 +30,7 @@ function getatwal(address) {
 }
 
 //
+// ss
    function databack (data) {
     let url = `http://api.weatherstack.com/current?access_key=0af40b4c478a4eee5eff273eb6d3ff2f&query=${data.ard},${data.tol}`
     let final = new Promise((resolve, reject) => {
